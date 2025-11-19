@@ -1,0 +1,155 @@
+.thank-you-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.thank-you-card {
+  background: white;
+  border-radius: 12px;
+  padding: 40px;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.checkmark {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #4CAF50;
+  color: white;
+  font-size: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+}
+
+.thank-you-card h1 {
+  color: #333;
+  margin-bottom: 16px;
+  font-size: 32px;
+}
+
+.main-message {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.result-summary {
+  text-align: left;
+  margin: 30px 0;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 8px;
+}
+
+.urgency-badge {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.red-flags {
+  margin: 20px 0;
+}
+
+.red-flags h3 {
+  color: #333;
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+
+.red-flags ul {
+  list-style: none;
+  padding: 0;
+}
+
+.red-flags li {
+  padding: 8px 0;
+  padding-left: 24px;
+  position: relative;
+  color: #c62828;
+}
+
+.red-flags li::before {
+  content: '⚠';
+  position: absolute;
+  left: 0;
+}
+
+.explanation {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #ddd;
+}
+
+.explanation p {
+  color: #555;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+.debug-info {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #ddd;
+  text-align: left;
+}
+
+.debug-info summary {
+  cursor: pointer;
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.debug-info pre {
+  background: #f5f5f5;
+  padding: 12px;
+  border-radius: 4px;
+  overflow-x: auto;
+  font-size: 12px;
+  color: #333;
+}
+
+.big-button {
+  margin-top: 20px;
+  padding: 18px 24px;
+  font-size: 18px;
+  font-weight: 500;
+  border: 2px solid #757575;
+  border-radius: 8px;
+  background: #757575;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s;
+  min-width: 200px;
+}
+
+.big-button.secondary {
+  background: #757575;
+  border-color: #757575;
+}
+
+.big-button.secondary:hover {
+  background: #616161;
+}
+
+@media (max-width: 600px) {
+  .thank-you-card {
+    padding: 20px;
+  }
+}
+
+
