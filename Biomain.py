@@ -21,7 +21,7 @@ def search_biomedical_research(query: str) -> str:
     }
 
     try:
-        print(f"🔍 Searching for: {query}")
+        print(f"Searching for: {query}")
         run = client.actor("I55A4lAMNxZwfySX4").call(run_input=run_input)
 
         if not run or "defaultDatasetId" not in run:
@@ -72,11 +72,11 @@ def main():
             return
 
         # Do the research first
-        print(f"\n🔍 Searching for research on: {research_topic}")
+        print(f"\nSearching for research on: {research_topic}")
         research_data = search_biomedical_research(research_topic)
 
         print("\n" + "=" * 50)
-        print("📊 RESEARCH RESULTS")
+        print("RESEARCH RESULTS")
         print("=" * 50)
         print(research_data)
 
@@ -124,18 +124,18 @@ def main():
             verbose=True
         )
 
-        print(f"\n🧠 Starting analysis of {research_topic} research...")
+        print(f"\n Starting analysis of {research_topic} research...")
         print("=" * 60)
 
         result = crew.kickoff()
 
         print("\n" + "=" * 60)
-        print("🎯 RESEARCH ANALYSIS COMPLETED")
+        print("RESEARCH ANALYSIS COMPLETED")
         print("=" * 60)
         print(result)
 
     except Exception as e:
-        print(f"❌ Error: {e}")
+        print(f"Error: {e}")
         import traceback
         traceback.print_exc()
 
